@@ -1,0 +1,21 @@
+.head {
+  color: #00bbff !important;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 10px;
+}
+ul .color {
+  background: linear-gradient(
+      90deg,
+      rgba(33, 162, 255, 0.1) 1.89%,
+      rgba(50, 50, 51, 0) 50%
+    ),
+    linear-gradient(180deg, #575860 11.6%, #3a4852 54.73%, #2c2d34 100%);
+}
+li > a:hover {
+    color: white;
+    border-bottom: 2px solid #ffffffff; /* Chú ý: #ffffffff tương đương với #ffffff (màu trắng) */
+    transition-property: border, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }

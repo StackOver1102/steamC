@@ -19,3 +19,11 @@
     background-position: bottom left;
     margin-bottom: 1px;
 }
+
+.ico16 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://store.cloudflare.steamstatic.com/public/shared/images/buttons/icons_16.png?v=5);
+    vertical-align: text-top;
+}

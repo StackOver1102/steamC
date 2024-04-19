@@ -164,7 +164,7 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                               <a>GENRES</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <Link to="/category/1">Action</Link>
+                              <Link to="/category/action">Action</Link>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>Arcade & Rhythm</a>

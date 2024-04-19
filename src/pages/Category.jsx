@@ -4,9 +4,11 @@ import CategoryDiv from "../Components/Category/CategoryDiv";
 import PopularTitles from "../Components/Category/PopularTitles";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
-import data from "../mockData/data.json";
 import Footer from "../Components/Footer/Footer";
 import LoginCard from "../Components/LoginCard/LoginCard";
+import BrowseList from "../Components/Browse/BrowseList";
+import data from "../mockData/data.json";
+import Special from "../Components/Special/Special";
 const CategoryPage = () => {
   const [categories, setCategories] = useState([]);
   const [currentGame, setCurrentGame] = useState(0);
@@ -61,7 +63,7 @@ const CategoryPage = () => {
           />
         </div>
 
-        <div >
+        <div>
           {/* category iv w/ bg image from game */}
           {loading ? (
             <div>loading...</div>
@@ -80,6 +82,26 @@ const CategoryPage = () => {
           {/* Popular titles */}
           <div id="popular-titles-container">
             <PopularTitles categories={categories} />
+          </div>
+
+          <BrowseList allGames={data} />
+
+          <div>
+            <div className="max-w-[970px]  mx-auto">
+              <Special />
+            </div>
+          </div>
+
+          <div>
+            <div className="max-w-[970px]  mx-auto">
+              <Special />
+            </div>
+          </div>
+
+          <div>
+            <div className="max-w-[970px]  mx-auto">
+              <Special />
+            </div>
           </div>
         </div>
       </div>

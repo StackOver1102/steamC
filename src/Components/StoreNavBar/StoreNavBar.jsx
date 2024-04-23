@@ -39,113 +39,87 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                     style={{ textShadow: "0px 2px 3px rgba(0, 0, 0, 0.3)" }}
                   >
                     <li className="relative group  ">
-                      <a className="text-[#e5e5e5] text-[13px]">Your Store</a>
+                      <a className="text-[#e5e5e5] text-[13px]">
+                        Cửa hàng của bạn
+                      </a>
                       <ul className="color absolute hidden bg-white border rounded-md shadow-lg z-10 top-full left-0 w-max p-2 space-y-2 group-hover:block ">
                         <li>
                           <a className="text-[#D8D8D8] text-[13px]">
-                            New & Noteworthy
+                            Trang chủ
                           </a>
                         </li>
                         <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Community Recommendations
-                          </a>
+                          <Link className="text-[#D8D8D8] text-[13px]" to="/communityrecommendations">
+                            Khuyến nghị từ cộng đồng
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="text-[#D8D8D8] text-[13px]" to="/history">
+                            Đã xem gần đây
+                          </Link>
                         </li>
                         <li>
                           <a className="text-[#D8D8D8] text-[13px]">
-                            Recently Viewed
-                          </a>
-                        </li>
-                        <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Steam Curators
+                            Thẩm định Steam
                           </a>
                         </li>
                       </ul>
                     </li>
                     <li className="noteworthy relative group">
                       <a className="text-[#e5e5e5] text-[13px]">
-                        New & Noteworthy
+                        Mới & Đáng chú ý
                       </a>
                       <ul className="color absolute hidden bg-white border rounded-md shadow-lg z-10 top-full left-0 w-max p-2 space-y-2 group-hover:block">
                         <li className="head">
-                          <a className="text-[#D8D8D8] text-[13px]">Popular</a>
+                          <a className="text-[#D8D8D8] text-[13px]">Phổ biến</a>
                         </li>
                         <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Top Sellers
-                          </a>
+                          <Link className="text-[#D8D8D8] text-[13px]" to ="/topseller">
+                            Bán chạy nhất
+                          </Link>
                         </li>
                         <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Most Played
-                          </a>
+                          <Link className="text-[#D8D8D8] text-[13px]" to="/mostplayed">
+                            Chơi nhiều nhất
+                          </Link>
                         </li>
                         <div className="endLine-cont">
                           <div className="endLine"></div>
                         </div>
                         <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            New Releases
-                          </a>
+                          <Link className="text-[#D8D8D8] text-[13px]" to="/news">
+                            Mới ra mắt
+                          </Link>
                         </li>
                         <li className="head">
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            New & Updates
-                          </a>
+                          <Link className="text-[#D8D8D8] text-[13px]" to="/upcoming">
+                            Sắp ra mắt
+                          </Link>
                         </li>
                         <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Recently Updated
-                          </a>
+                          <Link className="text-[#D8D8D8] text-[13px]" to ="/update">
+                            Mới cập nhật
+                          </Link>
                         </li>
                         <div className="endLine-cont">
                           <div className="endLine"></div>
                         </div>
-                        <li className="head">
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            PROMOS & EVENTS
-                          </a>
-                        </li>
-                        <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Special Offers
-                          </a>
-                        </li>
-                        <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Sale Events
-                          </a>
-                        </li>
-                        <div className="endLine-cont">
-                          <div className="endLine"></div>
-                        </div>
-                        <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Steam Replay 2022
-                          </a>
-                        </li>
-                        <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
-                            Steam Next Fest
-                          </a>
-                        </li>
                       </ul>
                     </li>
                     <li className="relative group">
                       <div>
-                        <a className="text-[#e5e5e5] text-[13px]">Categories</a>
+                        <a className="text-[#e5e5e5] text-[13px]">Danh mục</a>
                         <ul
                           className=" color absolute hidden bg-white border rounded-md shadow-lg z-10 top-full left-0 w-max p-2  group-hover:flex gap-[55px] "
                           style={{ left: "-240px", maxWidth: "1051.440px" }}
                         >
                           <div className="border-r-2 border-gray-200  pr-[15px]">
                             <li className="head">
-                              <a>SPECIAL SECTIONS</a>
+                              <a>Mục đặc biệt</a>
                             </li>
                             <li>
                               <a className="text-[#D8D8D8] text-[13px]">
-                                Free to play
+                                Chơi miễn phí
                               </a>
                             </li>
                             <li>
@@ -155,66 +129,66 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                             </li>
                             <li>
                               <a className="text-[#D8D8D8] text-[13px]">
-                                Early access
+                                Truy cập sớm
                               </a>
                             </li>
                           </div>
                           <div>
                             <li className="head">
-                              <a>GENRES</a>
+                              <a>Thể loại</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <Link to="/category/action">Action</Link>
+                              <Link to="/category/action">Hành động</Link>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Arcade & Rhythm</a>
+                              <a>Arcade & nhịp điệu</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Fighting & Martial Arts</a>
+                              <a>Bắn súng góc nhìn thứ ba</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>First-Person Shooter</a>
+                              <a>Bắn súng góc nhìn thứ nhất</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Hack & Slash</a>
+                              <a>Chặt chém</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Platformer & Runner</a>
+                              <a>Platformer & Rượt đuổi</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Third-Person Shooter</a>
+                              <a>shmup</a>
                             </li>
                             <li
                               style={{ marginBottom: "8px" }}
                               className="text-[#D8D8D8] text-[13px]"
                             >
                               <a className="text-[#D8D8D8] text-[13px]">
-                                Shmup
+                                Đối kháng & Võ thuật
                               </a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Adventure</a>
+                              <a>Phiêu lưu</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Adventure RPG</a>
+                              <a>Giàu cốt truyện</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Casual</a>
-                            </li>
-                            <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Hidden Object</a>
+                              <a>Giải đố</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>Metroidvania</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Puzzle</a>
+                              <a>Nhập vai phiêu lưu</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Story-Rich</a>
+                              <a>Tìm đồ vật</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>Visual Novel</a>
+                            </li>
+                            <li className="text-[#D8D8D8] text-[13px]">
+                              <a>Đơn giản</a>
                             </li>
                           </div>
                           <div>
@@ -222,55 +196,55 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                               className="text-[#D8D8D8] text-[13px]"
                               style={{ marginTop: "38px" }}
                             >
-                              <a>Role-Playing</a>
+                              <a>Nhập vai</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Action RPG</a>
-                            </li>
-                            <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Adventure RPG</a>
+                              <a>Hành động nhập vai</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>JRPG</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Party-Based</a>
+                              <a>Nhập vai chiến thuật</a>
+                            </li>
+                            <li className="text-[#D8D8D8] text-[13px]">
+                              <a>Nhập vai phiêu lưu</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>Rogue-Like</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Strategy RPG</a>
+                              <a>Theo lượt</a>
                             </li>
                             <li
                               style={{ marginBottom: "8px" }}
                               className="text-[#D8D8D8] text-[13px]"
                             >
-                              <a>Turn-Based</a>
+                              <a>Tổ đội</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Simulation</a>
+                              <a>Mô phỏng</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Building & Automation</a>
+                              <a>Nông trại & Chế tác</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Dating</a>
+                              <a>Thú vui & Công việc</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Hobby & Job</a>
+                              <a>Vũ trụ & Máy bay</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Life & Immersive</a>
+                              <a>Vật lý & Sandbox</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Sandbox & Physics</a>
+                              <a>Xây dựng & Tự động hóa</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Space & Flight</a>
+                              <a>Đời sống & Chân thực</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Farming & Crafting</a>
+                              <a>Đời sống & Chân thực</a>
                             </li>
                           </div>
                           <div className="border-r-2 border-gray-200  pr-[15px]">
@@ -278,118 +252,119 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                               style={{ marginTop: "38px" }}
                               className="text-[#D8D8D8] text-[13px]"
                             >
-                              <a>Strategy</a>
+                              <a>Chiến thuật</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Card & Board</a>
+                              <a>Bài & Bàn</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>City & Settlement</a>
+                              <a>Chiến lược theo lượt</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Grand & 4X</a>
+                              <a>Chiến thuật thời gian thực (RTS)</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Military</a>
+                              <a>Quân đội</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Real-Time Strategy</a>
+                              <a>Thành phố & Lập cư</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Tower Defense</a>
+                              <a>Thủ thành</a>
                             </li>
                             <li
                               style={{ marginBottom: "8px" }}
                               className="text-[#D8D8D8] text-[13px]"
                             >
-                              <a>Turn-Based Strategy</a>
+                              <a>Vĩ mô & 4X
+</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Sports & Racing</a>
+                              <a>Thể thao & Đua tốc độ</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>All Sports</a>
+                              <a>Các môn thể thao</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Fishing & Hunting</a>
+                              <a>Câu cá & Săn bắn</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Individual Sports</a>
+                              <a>Mô phỏng thể thao</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Racing</a>
+                              <a>Mô phỏng đua xe</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Racing Sim</a>
+                              <a>Thể thao cá nhân</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Sports Sim</a>
+                              <a>Thể thao đồng đội</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Team Sports</a>
+                              <a>Đua tốc độ</a>
                             </li>
                           </div>
                           <div>
                             <li className="head">
-                              <a>THEMES</a>
+                              <a>Chủ đề</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>Anime</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Horror</a>
+                              <a>Bí ẩn & Trinh thám</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Mystery & Detective</a>
+                              <a>Kinh dị</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Open World</a>
+                              <a>Sinh tồn</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Sci-Fi & Cyberpunk</a>
+                              <a>Thế giới mở</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Space</a>
+                              <a>Viễn tưởng & Cyberpunk</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Survival</a>
+                              <a>Vũ trụ</a>
                             </li>
                             <li
                               className="head"
                               style={{ marginBlock: "22px" }}
                             >
-                              <a>PLAYER SUPPORT</a>
+                              <a>HỖ TRỢ NGƯỜI CHƠI</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Co-Operative</a>
+                              <a>Chơi đơn</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>LAN</a>
-                            </li>
-                            <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Local & Party</a>
+                              <a>Cục bộ & Hội nhóm</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>MMO</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Multiplayer</a>
+                              <a>Mạng nội bộ</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Online Competitive</a>
+                              <a>Nhiều người</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
-                              <a>Singleplayer</a>
+                              <a>Phối hợp</a>
+                            </li>
+                            <li className="text-[#D8D8D8] text-[13px]">
+                              <a>Thi đấu trực tuyến</a>
                             </li>
                           </div>
                         </ul>
                       </div>
                     </li>
                     <li>
-                      <a className="text-[#e5e5e5] text-[13px]">Points Shop</a>
+                      <Link className="text-[#e5e5e5] text-[13px]" to="/points">Cửa hàng điểm</Link>
                     </li>
                     <li>
-                      <a className="text-[#e5e5e5] text-[13px]">News</a>
+                      <Link className="text-[#e5e5e5] text-[13px]" to ="/update">Tin tức</Link>
                     </li>
                     <li>
                       <a className="text-[#e5e5e5] text-[13px]">Labs</a>

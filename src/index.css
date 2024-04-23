@@ -3,8 +3,41 @@
 @tailwind utilities;
 
 body {
-    background-image: url("https://store.cloudflare.steamstatic.com/public/images/v6/colored_body_top.png?v=2");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #1b2838;
-  }
+  background-image: url("https://store.cloudflare.steamstatic.com/public/images/v6/colored_body_top.png?v=2");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #1b2838;
+}
+
+.recently_viewed_row .recently_viewed_content {
+  padding-left: 212px;
+  padding-top: 32px;
+  padding-right: 306px;
+}
+.recently_viewed_row .recently_viewed_date {
+  position: absolute;
+  left: 640px;
+  top: 42px;
+  font-size: 11px;
+  color: #8f98a0;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+}
+.recently_viewed_row .recently_viewed_price {
+  position: absolute;
+  top: 42px;
+  right: 14px;
+  text-align: right;
+  font-size: 11px;
+  color: #9e9995;
+}
+
+.recently_viewed_row .recently_viewed_content h3 {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+  margin-bottom: 15px;
+}

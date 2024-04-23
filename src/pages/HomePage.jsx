@@ -45,6 +45,7 @@ const HomePage = () => {
       title: "test6",
     },
   ]);
+  
   return (
     <div className="w-full">
       <Navbar />

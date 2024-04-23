@@ -37,89 +37,9 @@ const Sidebar = ({ recentlyViewed }) => {
               alt="Steam Deck"
               className=" max-w-[85%] mb-[6px] overflow-clip"
             />
-            <div className="text-[#88bde9] text-[14px] leading-4 font-bold cursor-pointer hover:text-white">
-              steam deck
-            </div>
-            <div className="block w-fit text-[#a4b3c4] text-[12px] font-bold mb-[25px] normal-case">
-              Get Yours Now
-            </div>
           </div>
         </div>
-        <div>
-          <div
-            id="sidebar-head-top"
-            className=" mb-[2px] leading-4 text-[14px] font-bold group"
-          >
-            <img
-              src="https://store.cloudflare.steamstatic.com/public/images//gift/steamcards_promo_03.png"
-              alt="promo"
-              className="w-[85%] mb-[6px]"
-            />
-            <p className="leading-4 text-[14px] font-bold text-[#88bde9] uppercase cursor-pointer group-hover:text-white">
-              Steam Gift Cards
-            </p>
-          </div>
-          <div className="block w-fit text-[#a4b3c3] text-[12px] font-bold mb-[25px]">
-            Give the Gift of the Game
-          </div>
-        </div>
-
-        <div className="leadint-4 mt-[7px] text-[14px] uppercase font-medium text-[#536f86] ">
-          Recommended
-        </div>
-        <div className="" id="side-bar-recommended">
-          {SIDEBAR_RECOMMENDED.map((item, index) => (
-            <a
-              className="leading-4 mt-[2px] block w-fit text-[#7A8B9D] text-[12px] font-bold hover:text-[#00BBFF]"
-              key={item + index}
-              href={item}
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-        <div className="leading-4 mt-[16px] mb-[7px] text-[14px] text-[#536f86] uppercase font-bold">
-          Browser Categories
-        </div>
-        <div id="side-bar-categories">
-          {SIDEBAR_CATEGORIES.map((item, index) => (
-            <a
-              key={item + index}
-              className="leading-4 mt-[2px] block w-fit text-[#7A8B9D] text-[12px] font-bold hover:text-[#00BBFF]"
-              href={item}
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-        <div className="leading-4 mt-[16px] mb-[7px] text-[14px] text-[#536f86] uppercase font-bold">
-          Hardware
-        </div>
-        <div id="sidebar-hardware">
-          {SIDE_BAR_HARDWARE.map((item, index) => (
-            <a
-              key={item + index}
-              className="leading-4 mt-[2px] block w-fit text-[#7A8B9D] text-[12px] font-bold hover:text-[#00BBFF]"
-              href="item"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-        <div className="leading-4 mt-[16px] mb-[7px] text-[14px] text-[#536f86] uppercase font-bold">
-          Browse By Genre
-        </div>
-        <div id="sidebar-genres">
-          {SIDE_BAR_GENRES.map((item, index) => (
-            <a
-              key={item + index}
-              className="leading-4 mt-[2px] block w-fit text-[#7A8B9D] text-[12px] font-bold hover:text-[#00BBFF]"
-              href="item"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
+     
       </div>
     </div>
   );

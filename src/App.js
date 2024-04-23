@@ -5,6 +5,14 @@ import Signup from "./pages/SignupPage";
 import CategoryPage from "./pages/Category";
 import ProductPage from "./pages/Product";
 import { useState } from "react";
+import CommunityRecomment from "./pages/CommunityRecomment";
+import History from "./pages/History";
+import TopSeller from "./pages/TopSelling";
+import PlayTop from "./pages/Player";
+import News from "./pages/News";
+import Update from "./pages/Update";
+import Points from "./pages/Points";
+import Wishlist from "./pages/Wishlist";
 
 function App() {
   const [recentlyViewed, setRecentlyViewed] = useState([
@@ -44,6 +52,16 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/communityrecommendations" element={<CommunityRecomment />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/topseller" element={<TopSeller />} />
+          <Route path="/mostplayed" element={<PlayTop />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/upcoming" element={<News />} />
+          <Route path="/update" element={<Update />} />
+          <Route path="/points" element={<Points />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+
           <Route path="/category/:id" element={<CategoryPage />} />
           <Route
             path="/product/:id"

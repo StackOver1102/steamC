@@ -7,7 +7,6 @@ import {
 } from "./utils";
 import install from "../../assets/btn_header_installsteam.png";
 import { Link } from "react-router-dom";
-
 const Navbar = () => {
   const [showStore, setShowStore] = useState(false);
   const [showCommunity, setShowCommunity] = useState(false);

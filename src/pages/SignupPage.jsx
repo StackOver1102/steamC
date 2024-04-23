@@ -55,12 +55,12 @@ const Signup = () => {
                       id="title"
                       className="uppercase text-[34px] text-white mb-[30px] font-extralight leading-[2px]"
                     >
-                      Create Your Account
+                      TẠO TÀI KHOẢN CỦA BẠN
                     </div>
                     <div className="flex items-center flex-wrap my-[25px]">
                       <div className="w-[292px] float-none">
                         <label className="text-[14px] text-[#b8b6b4] align-top">
-                          Email Address
+                          Địa chỉ email
                         </label>
                         <input
                           value={form.email || ""}
@@ -74,7 +74,7 @@ const Signup = () => {
                     <div className="flex items-center flex-wrap my-[25px]">
                       <div className="w-[292px] float-none">
                         <label className="text-[14px] text-[#b8b6b4] align-top">
-                          Username
+                          Tên tài khoản
                         </label>
                         <input
                           value={form.username || ""}
@@ -89,7 +89,7 @@ const Signup = () => {
                     <div className="flex items-center flex-wrap my-[25px]">
                       <div className="w-[292px] float-none">
                         <label className="text-[14px] text-[#b8b6b4] align-top">
-                          Password
+                          Mật khẩu
                         </label>
                         <input
                           value={form.password || ""}
@@ -105,7 +105,7 @@ const Signup = () => {
                     <div className="flex items-center flex-wrap my-[25px]">
                       <div className="w-[292px] float-none">
                         <label className="text-[14px] text-[#b8b6b4] align-top">
-                          Confirm your Password
+                          Xác nhận mật khẩu của bạn
                         </label>
                         <input
                           type="password"
@@ -124,7 +124,7 @@ const Signup = () => {
                     <div className="flex items-center flex-wrap my-[25px]">
                       <div className="w-[292px] float-none">
                         <label className="text-[14px] text-[#b8b6b4] align-top">
-                          Country of Residence
+                          Quốc gia cư trú{" "}
                         </label>
                         <select
                           value={form.country || "US"}
@@ -152,15 +152,13 @@ const Signup = () => {
                               setForm({ ...form, age: form.age ? false : true })
                             }
                           />
-                          I am 13 years of age or older and I agree to the
+                          Tôi từ 13 tuổi trở lên và tôi đồng ý với <> </>
                           <a className="text-[white] hover:text-[#57cbde] text-[14px] cursor-pointer">
-                            {" "}
-                            Steam Subscriber Agreement{" "}
+                            Thỏa thuận người đăng ký Steam
                           </a>
-                          and the
+                          <> </>
                           <a className="text-[white] hover:text-[#57cbde] text-[14px] cursor-pointer">
-                            {" "}
-                            Valve Privacy Policy
+                            và Chính sách quyền riêng tư của Valve . Tiếp tục
                           </a>
                           .
                         </label>

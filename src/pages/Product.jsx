@@ -213,7 +213,7 @@ const ProductPage = ({ setRecentlyViewed, recentlyViewed }) => {
                           "linear-gradient(to right, #75b022 5%, #588a1b 95%)",
                       }}
                     >
-                      Thêm vào giỏ
+                      <Link to="/wishlist">Thêm vào giỏ</Link>
                     </button>
                   </div>
                 </div>

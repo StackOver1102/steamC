@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import data from "../../mockData/data.json"
+import data from "../../mockData/data.json";
 const TestCarousel = () => {
   const [carouselData, setCarouselData] = useState([]);
   const [bigImage, setBigImage] = useState([]);
@@ -42,7 +42,7 @@ const TestCarousel = () => {
     const getData = async () => {
       try {
         // const response = await api.get("/api/games/recommended");
-        
+
         // console.log(data);
         const minipics = data.map((images) => {
           return images.images.slice(0, 4);
@@ -110,7 +110,7 @@ const TestCarousel = () => {
       <>
         <div className="h-[353px] w-[940px] mx-auto">
           <div className="pb-2 text-white font-semibold">
-            FEATURED & RECOMMENDED
+            NỔI BẬT & ĐƯỢC KHUYẾN NGHỊ
           </div>
           <div
             className="h-full cursor-pointer"

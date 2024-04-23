@@ -82,7 +82,7 @@ function Carousel({
                 }}
               >
                 <img
-                  src={categories[currentGame].game_image}
+                  src={categories[currentGame]?.game_image}
                   className="object-center object-cover h-[300px] w-[257px] drop-shadow-lg"
                 />
                 <div
@@ -90,9 +90,9 @@ function Carousel({
                   className="w-[258px] h-10 bg-black"
                 >
                   <div id="price" className="text-[white] text-center pt-2">
-                    {categories[currentGame].price === 0
+                    {categories[currentGame]?.price === 0
                       ? "Free to Play"
-                      : `$${categories[currentGame].price}`}
+                      : `$${categories[currentGame]?.price}`}
                   </div>
                   <div id="compatibility"></div>
                 </div>
@@ -111,10 +111,10 @@ function Carousel({
                   id="game-title"
                   className="text-white text-4xl font-bold px-4 tracking-wider pt-3 pb-1"
                 >
-                  {categories[currentGame].title}
+                  {categories[currentGame]?.title}
                 </div>
                 <div id="tags" className="text-slate-300 px-4 my-1">
-                  {categories[currentGame].tags.map((tag) => {
+                  {categories[currentGame]?.tags.map((tag) => {
                     return (
                       <span
                         key={tag}
@@ -127,7 +127,7 @@ function Carousel({
                 </div>
                 ;
                 <div id="description" className="text-slate-300 p-4">
-                  {categories[currentGame].description}
+                  {categories[currentGame]?.description}
                 </div>
               </div>
             </div>

@@ -63,20 +63,20 @@ function PopularTitles({ categories }) {
       >
         {categories.map((category, index) => (
           <div
-            key={category.id}
+            key={category?.id}
             className="h-[170px] w-[300px] mt-[0px] rounded-lg hover:shadow-md hover:shadow-[#fafafa9b] mr-2 hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
             onMouseEnter={() => setHover(index)}
             onMouseLeave={() => setHover(-1)}
           >
-            <Link to={`/product/${category.id}`}>
+            <Link to={`/product/${category?.id}`}>
               {hover === index ? (
-                <video src={category.videos} autoPlay muted />
+                <video src={category?.videos} autoPlay muted />
               ) : (
-                <img src={category.game_image} className="rounded-t-[5px]" />
+                <img src={category?.game_image} className="rounded-t-[5px]" />
               )}
             </Link>
             <div className="text-white text-center mt-[3px]">
-              {category.title}
+              {category?.title}
             </div>
           </div>
         ))}

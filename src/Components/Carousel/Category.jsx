@@ -33,7 +33,7 @@ const CategoryCarousel = () => {
 
     return slicedCategories.map((category) => (
       <Link
-        to={`/category/${category.name}`}
+        to={`/category/${category.nameEN.toLocaleLowerCase()}`}
         key={category.id}
         className={`carousel-item flex flex-col items-center ${
           transition ? "opacity-0" : "opacity-100"
@@ -41,10 +41,10 @@ const CategoryCarousel = () => {
       >
         <img
           src={category.image}
-          alt={category.name}
+          alt={category.nameVN}
           className="w-48 h-32 object-cover rounded-lg hover:shadow-md hover:shadow-[#1A9FFF] mr-2 hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
         />
-        <p className="mt-2 text-lg font-semibold">{category.name}</p>
+        <p className="mt-2 text-lg font-semibold">{category.nameVN}</p>
       </Link>
     ));
   };

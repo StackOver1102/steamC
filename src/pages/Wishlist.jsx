@@ -337,22 +337,34 @@ const Wishlist = () => {
                         </div>
                       </div>
                     </div>
+                    <div class="_1Sdz1qnoKoD9eEPpC340Yj Panel Focusable pt-2">
+                      <div>
+                        <button
+                          type="button"
+                          class="_1rk1xUIAHMcMMDm4jz3MOM DialogButton _DialogLayout Secondary Focusable"
+                          tabindex="0"
+                        >
+                          Tiếp tục mua sắm
+                        </button>
+                      </div>
+                      <div class="text-[#fff]" tabindex="0">
+                        Gỡ bỏ tất cả sản phẩm
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="_1Sdz1qnoKoD9eEPpC340Yj Panel Focusable pt-2">
-              <div>
-                <button
-                  type="button"
-                  class="_1rk1xUIAHMcMMDm4jz3MOM DialogButton _DialogLayout Secondary Focusable"
-                  tabindex="0"
-                >
-                  Tiếp tục mua sắm
-                </button>
-              </div>
-              <div class="_12zYFuKO2U-1QfeVxlGfwF Panel Focusable" tabindex="0">
-                Gỡ bỏ tất cả sản phẩm
+              <div className="_3HIve50RR17shqpJqmrUps _31YlKoxrUknOG_d7armP5n Panel Focusable">
+                <div className="_2bIzQo07mxubFvscA8RIA8">
+                  <div class="_2DjadWLFH3keW9rGWZKxSk qV80oahDZsbXiS6lIDLND">
+                    <div class="_3ayrhzEm-T_IRhWeQ4HFxr">Tổng ước tính</div>
+                    <div class="_2WLaY5TxjBGVyuWe_6KS3N">$104.94</div>
+                  </div>
+                  <div class="_31DQWsrdb_9oV-vMOaaPqI qV80oahDZsbXiS6lIDLND">
+                    Thuế tiêu thụ sẽ được tính trong quá trình thanh toán nếu có
+                  </div>
+                  <button type="button" class="qV80oahDZsbXiS6lIDLND DialogButton _DialogLayout Primary Focusable" tabindex="0">Đăng nhập để mua</button>
+                </div>
               </div>
             </div>
           </div>

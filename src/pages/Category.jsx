@@ -20,7 +20,7 @@ const CategoryPage = () => {
   useEffect(() => {
     const getCategories = async () => {
       try {
-        const resultData = data.filter((item) =>
+        const resultData = data?.filter((item) =>
           item.category.some((category) =>
             category.toLocaleUpperCase().includes(id?.toLocaleUpperCase())
           )
@@ -57,7 +57,7 @@ const CategoryPage = () => {
           }}
         >
           <img
-            src={categories[currentGame]?.game_image}
+            src={categories.length > 0 && categories[currentGame]?.game_image}
             className="max-w-[1500px] w-full mx-auto h-[800px] mix-blend-overlay"
             alt="Category Image"
           />

@@ -36,7 +36,7 @@ const Login = () => {
               <div className="gap-[32px] w-full flex flex-col">
                 <div className="flex flec-col gap-2 my-2 mx-4">
                   <div className="text-[#fff] text-[32px] uppercase tracking-wide font-extralight">
-                    Sign in
+                    ĐĂNG NHẬP
                   </div>
                 </div>
                 <div
@@ -50,7 +50,7 @@ const Login = () => {
                         className="grid grid-cols-1 gap-[2px]"
                       >
                         <div className="text-[#1999ff] font-medium text-[12px] uppercase tracking-wide">
-                          Sign in with account name
+                          ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN
                         </div>
                         <input
                           className="rounded-sm p-[10px] text-[15px] border-[#32353c] border-[1px] outline-none"
@@ -64,7 +64,7 @@ const Login = () => {
                         className="grid grid-cols-1 gap-[2px]"
                       >
                         <div className="text-[#afafaf] font-medium text-[12px] uppercase tracking-wide">
-                          Password
+                          MẬT KHẨU
                         </div>
                         <input
                           className="rounded-sm p-[10px] text-[15px] border-[#32353c] border-[1px] outline-none"
@@ -82,7 +82,7 @@ const Login = () => {
                           className="w-[270px] relative rounded-sm border-none outline-none p-3 text-[#fff] text-base font-normal text-center cursor-pointer"
                           onClick={handleSubmit}
                         >
-                          Sign in
+                          Đăng nhập
                         </button>
                       </div>
                       <div
@@ -97,13 +97,13 @@ const Login = () => {
                         to={"/signup"}
                         className="text-[#afafaf] text-[12px] cursor-pointer underline text-center"
                       >
-                        Help, I can't sign in
+                        Trợ giúp, tôi không thể đăng nhập
                       </Link>
                     </form>
                     <div className="flex-0 grid gap-1 ml-[40px]">
                       <div>
                         <div className="text-[#1999ff] font-medium text-[12px] uppercase tracking-wide">
-                          Or sign in with QR
+                          HOẶC ĐĂNG NHẬP BẰNG QR
                         </div>
                         <div className=" aspect-square rounded-sm mt-[2px] mb-[8px]">
                           <div className="flex flex-col items-center">
@@ -114,7 +114,7 @@ const Login = () => {
                             />
                           </div>
                           <div className="text-center text-[12px] text-[#afafaf]">
-                            This is totally a real login I swear.
+                            Đây hoàn toàn là một đăng nhập thực sự, tôi thề.
                           </div>
                         </div>
                       </div>

@@ -16,7 +16,7 @@ const LoginBar = () => {
             className="h-[130px] w-auto bg-[rgba(0,0,0,0.2)] p-4 text-center text-[15px] text-[#8f98a0] "
           >
             <p className="mt-[5px]">
-              Sign in to view personalized recommendations
+              Đăng nhập để xem các đề xuất được cá nhân hóa
             </p>
             <div id="sign-in-button" className="mt-[15px]">
               <Link
@@ -28,17 +28,17 @@ const LoginBar = () => {
                 to="/login"
               >
                 <span className="px-[15px] text-[15px] leading-[30px]">
-                  Sign In
+                  Đăng nhập
                 </span>
               </Link>
               <br />
               <br />
-              or
+              Hoặc
               <Link className="text-white hover:text-[#67c1f5]" to="/signup">
                 {" "}
-                sign up{" "}
+                đăng ký{" "}
               </Link>
-              and join Steam for free
+              và tham gia Steam miễn phí
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
 export const NAVLINKS = [
-    { name: "Store", path: "/store" },
-    { name: "Community", path: "/community" },
-    { name: "About", path: "/about" },
-    { name: "Support", path: "/support" },
+    { name: "Cửa hàng", path: "/" },
+    { name: "Cộng Đồng", path: "/" },
+    { name: "Thông Tin", path: "/" },
+    { name: "Hỗ trợ", path: "/" },
   ];
   export const NAV_SUBLINKS_STORE = [
     { name: "Home", path: "/home" },

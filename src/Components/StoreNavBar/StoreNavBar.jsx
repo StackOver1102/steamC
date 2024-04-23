@@ -44,17 +44,23 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                       </a>
                       <ul className="color absolute hidden bg-white border rounded-md shadow-lg z-10 top-full left-0 w-max p-2 space-y-2 group-hover:block ">
                         <li>
-                          <a className="text-[#D8D8D8] text-[13px]">
+                          <Link className="text-[#D8D8D8] text-[13px]" to="/">
                             Trang chủ
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <Link className="text-[#D8D8D8] text-[13px]" to="/communityrecommendations">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/communityrecommendations"
+                          >
                             Khuyến nghị từ cộng đồng
                           </Link>
                         </li>
                         <li>
-                          <Link className="text-[#D8D8D8] text-[13px]" to="/history">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/history"
+                          >
                             Đã xem gần đây
                           </Link>
                         </li>
@@ -74,12 +80,18 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                           <a className="text-[#D8D8D8] text-[13px]">Phổ biến</a>
                         </li>
                         <li>
-                          <Link className="text-[#D8D8D8] text-[13px]" to ="/topseller">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/topseller"
+                          >
                             Bán chạy nhất
                           </Link>
                         </li>
                         <li>
-                          <Link className="text-[#D8D8D8] text-[13px]" to="/mostplayed">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/mostplayed"
+                          >
                             Chơi nhiều nhất
                           </Link>
                         </li>
@@ -87,17 +99,26 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                           <div className="endLine"></div>
                         </div>
                         <li>
-                          <Link className="text-[#D8D8D8] text-[13px]" to="/news">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/news"
+                          >
                             Mới ra mắt
                           </Link>
                         </li>
                         <li className="head">
-                          <Link className="text-[#D8D8D8] text-[13px]" to="/upcoming">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/upcoming"
+                          >
                             Sắp ra mắt
                           </Link>
                         </li>
                         <li>
-                          <Link className="text-[#D8D8D8] text-[13px]" to ="/update">
+                          <Link
+                            className="text-[#D8D8D8] text-[13px]"
+                            to="/update"
+                          >
                             Mới cập nhật
                           </Link>
                         </li>
@@ -276,8 +297,7 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                               style={{ marginBottom: "8px" }}
                               className="text-[#D8D8D8] text-[13px]"
                             >
-                              <a>Vĩ mô & 4X
-</a>
+                              <a>Vĩ mô & 4X</a>
                             </li>
                             <li className="text-[#D8D8D8] text-[13px]">
                               <a>Thể thao & Đua tốc độ</a>
@@ -361,10 +381,14 @@ const StoreNavBar = ({ isLoggedIn = true }) => {
                       </div>
                     </li>
                     <li>
-                      <Link className="text-[#e5e5e5] text-[13px]" to="/points">Cửa hàng điểm</Link>
+                      <Link className="text-[#e5e5e5] text-[13px]" to="/points">
+                        Cửa hàng điểm
+                      </Link>
                     </li>
                     <li>
-                      <Link className="text-[#e5e5e5] text-[13px]" to ="/update">Tin tức</Link>
+                      <Link className="text-[#e5e5e5] text-[13px]" to="/update">
+                        Tin tức
+                      </Link>
                     </li>
                     <li>
                       <a className="text-[#e5e5e5] text-[13px]">Labs</a>

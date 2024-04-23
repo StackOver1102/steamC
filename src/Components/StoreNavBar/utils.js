@@ -49,49 +49,57 @@ export const SIDE_BAR_GENRES = [
 export const CATEGORIES = [
   {
     id: 1,
-    name: "Action",
+    nameVN: "Hành động",
+    nameEN: "Action",
     image:
       "https://staticg.sportskeeda.com/editor/2019/03/cedbb-15534102082658-800.jpg",
   },
   {
     id: 2,
-    name: "Adventure",
+    nameVN: "Phưu lưu",
+    nameEN: "Adventure",
     image:
       "https://ftw.usatoday.com/wp-content/uploads/sites/90/2022/10/God-of-War-2.jpg?w=1000&h=600&crop=1",
   },
   {
     id: 3,
-    name: "Strategy",
+    nameEN: "Strategy",
+    nameVN: "Chiến lược",
     image:
       "https://assetsio.reedpopcdn.com/best-strategy-games-2022-header.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp",
   },
   {
     id: 4,
-    name: "MMO RPG",
+    nameEN: "MMO RPG",
+    nameVN: "MMO RPG",
     image:
       "https://beebom.com/wp-content/uploads/2018/11/Best-mmorpg-featured.jpg?resize=730%2C487&quality=75&strip=all",
   },
   {
     id: 5,
-    name: "Racing",
+    nameEN: "Racing",
+    nameVN: "Đua xe",
     image:
       "https://www.lifewire.com/thmb/aBS-aiWAFvYjdsWKOYmZHuvmS0Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/offlinecars-asphalt8-5bf393bb46e0fb002650eb20.jpg",
   },
   {
     id: 6,
-    name: "Puzzle",
+    nameEN: "Puzzle",
+    nameVN: "Câu đố",
     image:
       "https://play-lh.googleusercontent.com/fHEYNnbkM3ih-6CN5I4_wcKFpuceaJIx-m2HfN4u-dLhwKk2N7HXzxYcpOLwi7WPgVc=w2560-h1440-rw",
   },
   {
     id: 7,
-    name: "Casual",
+    nameEN: "Casual",
+    nameVN: "Casual",
     image:
       "https://fgfactory.com/wp-content/uploads/2020/02/cover-2-1594x768.jpg",
   },
   {
     id: 8,
-    name: "Virtual Reality",
+    nameEN: "Virtual Reality",
+    nameVN: "Thực tế ảo",
     image:
       "https://www.analyticssteps.com/backend/media/thumbnail/9808324/6459437_1636699848_VR%20GamesArtboard%201.jpg",
   },
@@ -101,22 +109,22 @@ export const CATEGORIES = [
 export const BROWSE_STEAM = [
   {
     id: 1,
-    name: "New Releases",
+    name: "Bản phát hành mới",
     link: "#",
   },
   {
     id: 2,
-    name: "Specials",
+    name: "Khuyến mãi",
     link: "#",
   },
   {
     id: 3,
-    name: "Free Games",
+    name: "Các trò chơi miễn phí",
     link: "#",
   },
   {
     id: 4,
-    name: "By User Tags",
+    name: "Theo thẻ người dùng",
     link: "#",
   },
 ];
@@ -124,18 +132,18 @@ export const BROWSE_STEAM = [
 export const BROWSE_LIST = [
   {
     id: 1,
-    name: "New & Trending",
+    name: "Mới & Xu hướng",
   },
   {
     id: 2,
-    name: "Top Sellers",
+    name: "Bán chạy nhất",
   },
   {
     id: 3,
-    name: "Popular Upcoming",
+    name: "Phổ biến sắp tới",
   },
   {
     id: 4,
-    name: "Specials",
+    name: "Khuyến mãi",
   },
 ];

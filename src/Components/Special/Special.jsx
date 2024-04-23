@@ -67,13 +67,13 @@ const Special = () => {
           id="title"
           className="text-[14px] uppercase text-white mb-[10px] pt-[2px] font-semibold tracking-wider"
         >
-          Special Offers
+          ƯU ĐÃI ĐẶC BIỆT
           <span className="float-right inline-block relative top-[-3px] font-[400] tracking-normal border-[1px] border-white border-opacity-50 hover:border-opacity-100 px-5 rounded-[3px]">
             <a
               className="rounded-sm p-[1px] inline-block cursor-pointer text-white bg-transparent"
               href="https://store.steampowered.com/specials?snr=1_4_4_#tab=TopSellers"
             >
-              <span>Browse More</span>
+              <span>DUYỆT THÊM</span>
             </a>
           </span>
         </h2>
@@ -141,7 +141,7 @@ const Special = () => {
                               id="offer"
                               className="font-light text-[#acdbf5]"
                             >
-                              Offer ends {formattedDateTime}
+                              ƯU đãi kết thúc {formattedDateTime}
                             </div>
                             <div id="sale-amount" className="mt-[10px]">
                               <div

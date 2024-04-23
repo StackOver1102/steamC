@@ -9,7 +9,7 @@ const LoginCard = () => {
           className="h-[160px] w-auto p-4 text-center text-[15px] text-[#8f98a0] font-normal"
         >
           <p className="mt-[5px]">
-            Sign in to view personalized recommendations
+            Đăng nhập để xem các đề xuất được cá nhân hóa
           </p>
           <div id="sign-in-button" className="mt-[15px]">
             <Link
@@ -21,17 +21,16 @@ const LoginCard = () => {
               to="/login"
             >
               <span className="px-[15px] text-[15px] leading-[30px]">
-                Sign In
+                Đăng nhập
               </span>
             </Link>
             <br />
             <br />
-            or
+            <span>hoặc </span>
             <Link className="text-white hover:text-[#67c1f5]" to="/signup">
-              {" "}
-              sign up{" "}
+              đăng ký
             </Link>
-            and join Steam for free
+            <span> và tham gia Steam miễn phí</span>
           </div>
         </div>
       </div>

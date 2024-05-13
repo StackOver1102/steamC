@@ -13,6 +13,8 @@ import News from "./pages/News";
 import Update from "./pages/Update";
 import Points from "./pages/Points";
 import Wishlist from "./pages/Wishlist";
+import SignupAdmin from "./pages/SignupAdmin";
+import PageAdmin from "./pages/pageAdmin";
 
 function App() {
   const [recentlyViewed, setRecentlyViewed] = useState([
@@ -52,6 +54,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/signupAdmin" element={<SignupAdmin />} />
+          <Route path="/admin" element={<PageAdmin />} />
+
           <Route path="/communityrecommendations" element={<CommunityRecomment />} />
           <Route path="/history" element={<History />} />
           <Route path="/topseller" element={<TopSeller />} />

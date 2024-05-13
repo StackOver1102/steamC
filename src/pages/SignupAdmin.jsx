@@ -3,35 +3,33 @@ import { COUNTRY_LIST } from "./utils";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-import * as UserService from "../services/userServices"
-const Signup = () => {
+import * as UserService from "../services/userServices";
+const SignupAdmin = () => {
   const [form, setForm] = useState({});
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
-
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const sendReq = await UserService.register(form)
-    if(sendReq){
+    const sendReq = await UserService.register({...form, isAdmin: true});
+    if (sendReq) {
       alert("thanh cong");
-      navigate("/login")
+      navigate("/login");
     }
   };
 
-  useEffect(()=>{
-    const userData = JSON.parse(localStorage.getItem("userData"));
+  //   useEffect(()=>{
+  //     const userData = JSON.parse(localStorage.getItem("userData"));
 
-    if (userData) {
-      navigate("/")
-    } else {
-      navigate("/signup")
-    }
-  },[])
+  //     if (userData) {
+  //       navigate("/")
+  //     } else {
+  //       navigate("/signup")
+  //     }
+  //   },[])
 
-  
   return (
     <>
       <Navbar />
@@ -155,27 +153,7 @@ const Signup = () => {
                       </div>
                     </div>
                     <div id="age" className="my-[25px]">
-                      <div>
-                        <label className="text-[14px] text-[#b8b6b4] align-top">
-                          <input
-                            className="inline w-[18px] h-[18px] bg-[#32352C] rounded-[3px] text-[#E9E9E9] py-2 px-[6px] font-normal mr-2"
-                            type="checkbox"
-                            value={form.age || false}
-                            onChange={() =>
-                              setForm({ ...form, age: form.age ? false : true })
-                            }
-                          />
-                          Tôi từ 13 tuổi trở lên và tôi đồng ý với <> </>
-                          <a className="text-[white] hover:text-[#57cbde] text-[14px] cursor-pointer">
-                            Thỏa thuận người đăng ký Steam
-                          </a>
-                          <> </>
-                          <a className="text-[white] hover:text-[#57cbde] text-[14px] cursor-pointer">
-                            và Chính sách quyền riêng tư của Valve . Tiếp tục
-                          </a>
-                          .
-                        </label>
-                      </div>
+                
                       <div className="mt-[35px]">
                         <button
                           onClick={handleSubmit}
@@ -208,4 +186,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignupAdmin;

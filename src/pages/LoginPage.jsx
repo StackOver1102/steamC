@@ -1,9 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import QR from "../assets/QR.png";
 import LoginBottom from "../Components/Login/LoginBottom";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
+import * as UserService from "../services/userServices"
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -14,8 +15,34 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+    const data = {
+      username,
+      password
+    }
+    const sendReq = await UserService.login(data)
+    if(sendReq.userCheck.isAdmin){
+      alert("Thanh cong")
+      navigate("/admin")
+    }else if(!sendReq.userCheck.isAdmin){
+      alert("Thanh cong")
+      navigate("/")
+    }
+    else{
+      console.log("Co lois")
+    }
     e.preventDefault();
   };
+
+
+  useEffect(()=>{
+    const userData = JSON.parse(localStorage.getItem("userData"));
+
+    if (userData) {
+      navigate("/")
+    } else {
+      navigate("/login")
+    }
+  },[])
 
   return (
     <>
@@ -79,6 +106,7 @@ const Login = () => {
                             background:
                               "linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%)",
                           }}
+                          type="button"
                           className="w-[270px] relative rounded-sm border-none outline-none p-3 text-[#fff] text-base font-normal text-center cursor-pointer"
                           onClick={handleSubmit}
                         >

@@ -12,9 +12,10 @@ const Navbar = () => {
   const [showCommunity, setShowCommunity] = useState(false);
   const [showUser, setShowUser] = useState(false);
   const [navLinks, setNavLinks] = useState(NAVLINKS);
-  const isLoggedIn = false;
-  const username = "admin";
-  const profilePic = "ok";
+  const [isLoggedIn, setisLoggedIn] = useState(false);
+  const [username, setUserName] = useState("");
+  const profilePic =
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGoe9ps7Bp9rw1fH9iIqraR-jw5nUAUePAL_gehclcA&s";
 
   const handleStoreEnter = () => {
     setShowStore(true);
@@ -34,15 +35,16 @@ const Navbar = () => {
     setShowUser(!showUser);
   };
 
-  //   useEffect(() => {
-  //     if (isLoggedIn) {
-  //       const updatedNavLinks = [...NAVLINKS];
-  //       updatedNavLinks.splice(2, 0, { name: username, link: "#" });
-  //       setNavLinks(updatedNavLinks);
-  //     } else {
-  //       setNavLinks(NAVLINKS);
-  //     }
-  //   }, [isLoggedIn, username]);
+  useEffect(() => {
+    const userData = JSON.parse(localStorage.getItem("userData"));
+
+    if (userData) {
+      setisLoggedIn(!isLoggedIn);
+      setUserName(userData.userCheck.username);
+    } else {
+      setisLoggedIn(false);
+    }
+  }, []);
 
   return (
     <div className=" w-full text-[14px] font-normal bg-navbar px-4 tracking-wider z-50">
@@ -188,6 +190,12 @@ const Navbar = () => {
                           className="block py-[5px] px-[12px] text-xs font-normal hover:bg-[#dcdedf] hover:text-[#171d25] leading-normal text-left cursor-pointer whitespace-nowrap overflow-hidden text-ellipsis"
                           key={link.name}
                           href={link.link}
+                          onClick={()=>{
+                            if(link.name === "Logout"){
+                              localStorage.clear()
+                              window.location.reload()
+                            }
+                          }}
                           //   {...(link.name === "Logout" && {
                           //     onClick: handleLogout,
                           //   })}
@@ -205,12 +213,6 @@ const Navbar = () => {
                     </div>
                   </div>
                 )}
-                <div
-                  id="wallet"
-                  className="text-right pr-[15px] leading-normal align-top text-[#b8b6b4] text-[11px] absolute right-[110px] top-7"
-                >
-                  <a href="">$0.00</a>
-                </div>
               </>
             ) : (
               <Link
